@@ -1,10 +1,10 @@
 package ar.teamx
 
-import eu.kanade.tachiyomi.source.model.*
 import eu.kanade.tachiyomi.source.online.HttpSource
 import okhttp3.Response
 
 class WaveTeamy : HttpSource() {
+    override val id: Long = 1234567890L
     override val name = "WaveTeamy"
     override val baseUrl = "https://waveteamy.com"
     override val lang = "ar"
