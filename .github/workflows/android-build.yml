@@ -23,7 +23,8 @@ jobs:
         uses: android-actions/setup-android@v3
 
       - name: Build APK
-        run: ./gradlew :app:assembleDebug
+        working-directory: app
+        run: ../gradlew assembleDebug
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
