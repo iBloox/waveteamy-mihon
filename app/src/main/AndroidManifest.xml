@@ -2,7 +2,6 @@
 
     <application
         android:label="WaveTeamy"
-        android:icon="@mipmap/ic_launcher"
         android:allowBackup="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <activity 
