@@ -10,11 +10,12 @@
     
     <application
         android:label="Tachiyomi: WaveTeamy"
+        android:icon="@mipmap/ic_launcher"
         android:allowBackup="false">
         
         <meta-data
             android:name="tachiyomi.extension.class"
-            android:value=".WaveTeamy" />
+            android:value=".WaveTeamyFactory" />
         
         <meta-data
             android:name="tachiyomi.extension.nsfw"
