@@ -1,4 +1,4 @@
-package ar.teamx
+package eu.kanade.tachiyomi.extension.ar.waveteamy
 
 import eu.kanade.tachiyomi.source.online.HttpSource
 import okhttp3.Response

@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace 'ar.teamx.waveteamy'
+    namespace 'eu.kanade.tachiyomi.extension.ar.waveteamy'
     compileSdk 34
 
     defaultConfig {
-        applicationId "ar.teamx.waveteamy"
+        applicationId "eu.kanade.tachiyomi.extension.ar.waveteamy"
         minSdk 21
         targetSdk 34
         versionCode 1
