@@ -1,17 +1,16 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <application
-        android:label="WaveTeamy"
-        android:allowBackup="true"
-        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity 
-            android:name=".MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter>
-        </activity>
+        android:label="Tachiyomi: WaveTeamy"
+        android:allowBackup="true">
+        
+        <meta-data
+            android:name="tachiyomi.extension.class"
+            android:value=".WaveTeamyFactory" />
+        
+        <meta-data
+            android:name="tachiyomi.extension.nsfw"
+            android:value="0" />
     </application>
 
 </manifest>
