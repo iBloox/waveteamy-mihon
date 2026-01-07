@@ -1,14 +1,18 @@
-# 🚀 START HERE - WaveTeamy Extension Release
+# 🚀 START HERE - Add WaveTeamy to Keiyoushi
 
-## ✅ Extension Updated to Match TeamX Pattern!
+## ⚠️ Important: Mihon Only Accepts Extensions from Repositories!
 
-I've updated the extension to use the **exact same code pattern as TeamX** (a working Arabic extension). This ensures it will work perfectly in Mihon!
+You're right - Mihon no longer accepts manual APK installations. Extensions **must** come from trusted repositories like **Keiyoushi**.
 
-**See [FINAL_UPDATE.md](FINAL_UPDATE.md) for details on what changed.**
+## ✅ Extension Ready for Keiyoushi!
 
-## 📦 Ready to Release
+I've updated the extension to use the **exact same code pattern as TeamX** (a working Arabic extension). This ensures it will work perfectly!
 
-Just follow these 3 simple steps:
+**See [FINAL_UPDATE.md](FINAL_UPDATE.md) for technical details.**
+
+## 📦 Submit to Keiyoushi Repository
+
+Follow these 3 simple steps:
 
 ---
 
@@ -58,16 +62,34 @@ Once merged, your extension will be live!
 
 ---
 
-## 📖 Need More Details?
+## 📖 Detailed Guide
 
-- **Quick Guide:** [QUICK_START.md](QUICK_START.md)
-- **Full Instructions:** [RELEASE_INSTRUCTIONS.md](RELEASE_INSTRUCTIONS.md)
-- **Project Summary:** [SUMMARY.md](SUMMARY.md)
+See **[KEIYOUSHI_PR_GUIDE.md](KEIYOUSHI_PR_GUIDE.md)** for:
+- Complete step-by-step instructions
+- What happens after merge
+- How users will install your extension
+- Troubleshooting tips
+
+---
+
+## 🎯 After Your PR is Merged
+
+Users will be able to install WaveTeamy:
+
+1. **Add Keiyoushi repo to Mihon:**
+   - Browse → Extension repos
+   - Add: `https://raw.githubusercontent.com/keiyoushi/extensions/repo/index.min.json`
+
+2. **Install WaveTeamy:**
+   - Browse → Extensions → Arabic
+   - Find "WaveTeamy"
+   - Click Install
 
 ---
 
 ## 💬 Need Help?
 
+- **Full Guide:** [KEIYOUSHI_PR_GUIDE.md](KEIYOUSHI_PR_GUIDE.md)
 - **Discord:** https://discord.gg/3FbCpdKbdY
 - **Docs:** https://keiyoushi.github.io/docs/
 
@@ -75,6 +97,8 @@ Once merged, your extension will be live!
 
 <div align="center">
 
-**Ready? Start with Step 1!** 🚀
+**Ready? Start with Step 1: Fork Keiyoushi!** 🚀
+
+https://github.com/keiyoushi/extensions-source
 
 </div>
