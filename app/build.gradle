@@ -35,6 +35,7 @@ android {
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib:1.9.10"
     compileOnly "org.jetbrains.kotlin:kotlin-stdlib:1.9.10"
-    compileOnly "com.github.tachiyomiorg:extensions-lib:1.5"
+    compileOnly "com.github.mihonapp:extensions-lib:15"
     compileOnly "com.squareup.okhttp3:okhttp:4.12.0"
+    compileOnly "org.jsoup:jsoup:1.17.2"
 }
