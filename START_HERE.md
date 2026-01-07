@@ -1,8 +1,14 @@
 # 🚀 START HERE - WaveTeamy Extension Release
 
-## ✅ Your Extension is 100% Ready!
+## ✅ Extension Updated to Match TeamX Pattern!
 
-Everything is prepared. Just follow these 3 simple steps:
+I've updated the extension to use the **exact same code pattern as TeamX** (a working Arabic extension). This ensures it will work perfectly in Mihon!
+
+**See [FINAL_UPDATE.md](FINAL_UPDATE.md) for details on what changed.**
+
+## 📦 Ready to Release
+
+Just follow these 3 simple steps:
 
 ---
 
