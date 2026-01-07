@@ -1,6 +1,7 @@
 package eu.kanade.tachiyomi.extension.ar.waveteamy
 
 import eu.kanade.tachiyomi.source.online.HttpSource
+import okhttp3.HttpUrl.Companion.toHttpUrl
 import okhttp3.Response
 
 class WaveTeamy : HttpSource() {
@@ -12,7 +13,13 @@ class WaveTeamy : HttpSource() {
 
     override fun popularMangaRequest(page: Int) = GET("$baseUrl/page/$page")
     override fun latestUpdatesRequest(page: Int) = GET("$baseUrl/latest/page/$page")
-    override fun searchMangaRequest(query: String, page: Int) = GET("$baseUrl/search?q=$query&page=$page")
+    override fun searchMangaRequest(query: String, page: Int) = GET(
+        "$baseUrl/search".toHttpUrl().newBuilder()
+            .addQueryParameter("q", query)
+            .addQueryParameter("page", page.toString())
+            .build()
+            .toString()
+    )
 
     override fun popularMangaParse(response: Response) = TODO()
     override fun latestUpdatesParse(response: Response) = TODO()
