@@ -3,6 +3,8 @@ name: Build Mihon Extension APK
 on:
   push:
     branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
   workflow_dispatch:
 
 jobs:
@@ -37,11 +39,23 @@ jobs:
       - name: Ensure Gradle Wrapper is executable
         run: chmod +x ./gradlew
 
-      # Step 6: Build APK (absolute path in repo root)
+      # Step 6: Run tests
+      - name: Run unit tests
+        run: ./gradlew :app:testDebugUnitTest --continue
+
+      # Step 7: Upload test results
+      - name: Upload test results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-results
+          path: app/build/test-results/
+
+      # Step 8: Build APK (absolute path in repo root)
       - name: Build APK
         run: ./gradlew :app:assembleDebug
 
-      # Step 7: Upload APK artifact
+      # Step 9: Upload APK artifact
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
